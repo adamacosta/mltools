@@ -1,0 +1,18 @@
+Package: mltools
+Title: Tools to Analyze the Machine Learning Modeling Process
+Version: 0.0.0.9000
+Authors@R:
+  person("Acosta", "Adam", role=c("aut", "cre"), email="adam.acosta@gatech.edu")
+Description: Personal project.
+URL: http://github.com/adamacosta/arpa/wiki
+BugReports: http://github.com/adamacosta/mltools/issues
+Imports:
+  mlr,
+  ggplot2,
+  ggvis,
+  parallelMap,
+  magrittr
+Suggests:
+  testthat
+License: GPL-3
+LazyData: true
