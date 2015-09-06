@@ -19,10 +19,9 @@
 #' @importFrom parallelMap parallelStop
 #'
 #' @export
-learningCurve <- function(data, learner) {
+learningCurve <- function(data, lrn) {
     nr <- nrow(data)
     percs <- seq(0.1, 1.0, by = 0.1)
-    lrn <- makeLearner(learner)
 
     generateSeries <- function(perc) {
         new.task <- makeClassifTask(id = 'new.task',
