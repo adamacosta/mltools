@@ -11,7 +11,8 @@ Imports:
   ggplot2,
   ggvis,
   parallelMap,
-  magrittr
+  magrittr,
+  tidyr
 Suggests:
   testthat
 License: GPL-3
