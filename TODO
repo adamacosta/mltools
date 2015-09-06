@@ -1,0 +1,24 @@
+Required for analysis:
+
+Model Complexity Curve
+======================
+
+Should have an error metric on the Y axis and complexity measure on the X axis.
+What this is will be different for different models and should be fully
+configurable, allowing the comparison of any complexity measure and any error
+measure returned by the modeling package. Should output both the training error
+and the cross-validation error.
+
+* Decision Trees - Max depth, minimum observations in node
+* Neural Networks - Number of hidden-layers, number of hidden layer units
+* kNN - Value of k, distance metric, kernel function
+* SVM - Kernel function, cost measure
+* Boosting - Number of base learners, which base learner
+
+Learning Curve
+==============
+
+Error metric on Y axis and size of dataset on X axis. Like complexity curve, should
+return both the training error and the cross-validation error. In this case,
+complexity or tuning parameters are fixed and we vary only the size of the data
+used.
