@@ -41,7 +41,8 @@ learningCurve <- function(data, lrn) {
     out <- data.frame(Examples = percs * nr,
                       Type = as.factor(c(rep('Training', length(tmp) / 2),
                                          rep('Testing', length(tmp) / 2))),
-                      Error = unname(tmp))
+                      Error = c(unname(tmp)[c(TRUE, FALSE)],
+                                unname(tmp)[c(FALSE, TRUE)]))
     out
 }
 
