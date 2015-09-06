@@ -39,8 +39,8 @@ learningCurve <- function(data, lrn) {
     parallelStop()
 
     out <- data.frame(Examples = percs * nr,
-                      Type = as.factor(c(rep(names(tmp)[1], nr),
-                                         rep(names(tmp)[2], nr))),
+                      Type = as.factor(c(rep('Training', length(tmp) / 2),
+                                         rep('Testing', length(tmp) / 2))),
                       Error = unname(tmp))
     out
 }
