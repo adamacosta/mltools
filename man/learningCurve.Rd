@@ -4,7 +4,7 @@
 \alias{learningCurve}
 \title{Generate data for a learning curve plot}
 \usage{
-learningCurve(data, learner)
+learningCurve(data, lrn)
 }
 \arguments{
 \item{data}{data.frame Contains training examples}
